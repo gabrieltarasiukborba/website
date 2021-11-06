@@ -76,6 +76,11 @@ h1.name {
     padding: 15px 25px;
 }
 
+#picture{
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .email,
 .age,
 .address,
@@ -87,10 +92,9 @@ h1.name {
 }
 
 .foto{
+    margin-right: 1em;
     border-style: solid;
-    border-left: none;
-    border-right: none;
-    width: 60%;   
+    width: 75%;   
 }
 
 .fotoindex{
@@ -458,10 +462,21 @@ body>footer>div>p {
 }
 
 
-
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (max-width:768px) 
 {
+
+    #picture{
+        display: flex;
+        justify-content: center
+    }
+
+    #picture .foto{
+        width: 35%;
+        display: flex;           /* nested flex container */
+        align-items: center;     /* vertical alignment */
+    }
+
     h1.name {
         text-align: center;
         padding-top: 30px;
