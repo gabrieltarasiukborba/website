@@ -1,248 +1,251 @@
 <!DOCTYPE html>
-<html>
-
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <title>Gabriel Borba</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabriel Borba, backend developer">
+    <meta name="author" content="Gabriel Borba">    
+    <link rel="shortcut icon" href="icon.png">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
 
-    <meta charset="utf-8"/>
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
-</head>
-
-<title>Gabriel Borba, backend developer</title>
-
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-<script type="text/javascript" src="js/script.js"></script>
-<link rel="shortcut icon" href="img/icon.png" />
-</head>
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
 
 <body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.jpg" alt="profile image" />
+		            <div class="profile-content">
+                        <ul class="list-inline list-header">
+                            <li class="list-inline-item"><h1 class="name">Gabriel Borba</h1></li>
+                            
 
-    <div class="container">
-        <div class="hero">
-            <h1 class="name"><strong>Gabriel</strong> Borba</h1>
-            <a target="_blank" href="https://www.linkedin.com/in/gabrieltborba/">
-                <p class="job-title">Backend Developer</p>
-            </a>
-            <p id="cidade" class="address"></p>
-            <p id="email" class="email"></p>
-            <p id="telefone" class="phone"></p> 
-            <p id="idade" class="age"></p> 
-        </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="picture" class="image col-md-3">
-                    <img class="foto" src="img/foto.jpg" alt="" />
-                </div>
-                <div class="col-md-9">
-                    <h2 class="lead" id="subTitle">Sobre <strong>mim</strong></h2>
-                    <p class="descricao">Graduado no curso de Engenharia da Computação, entusiasta com diversas tecnologias
-                        estou sempre procurando como melhorar na minha área de atuação.Estou aberto a oportunidades que
-                        me motivem e solidifique minha experiência como desenvolvedor e engenheiro da computação </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
+                            <li class="list-inline-item">
+                                <ul class="list-inline list-header">
+                                    <li class="list-inline-item">
+                                        <div class="form-check form-switch icons">
+                                            <input type="checkbox" class="form-check-input" id="darkSwitch" />    
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-inline-item">
+                                        <input type="image" id="br" onclick="language('br')" src="assets/images/brazil.png" class="flags"/>
+                                    </li>
+    
+                                    <li class="list-inline-item">
+                                        <input type="image" id="us" onclick="language('us')" class="flags" src="assets/images/us.png"/>  
+                                    </li>
+                                </ul>
+                            </li>
+                        
+                        </ul>
+ 
+                        <ul class="list-inline list-header">
+                            <li class="list-inline-item"><h2 class="desc" id= "function"></h2></li>   
+                            <li class="list-inline-item"><h3 class="desc-exp">|&nbsp;Java&nbsp;,&nbsp;SQL&nbsp;,&nbsp;AWS&nbsp;|</h3></li> 
+                        </ul>
+                            
+		                <ul class="social list-inline list-header">
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/gabrieltborba"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://www.github.com/gabrieltarasiukborba"><i class="fab fa-github-alt"></i></a></li>                
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-2">
+                    
+		            <div class="dark-mode-switch d-flex">
+						
+			        </div><!--//dark-mode-switch-->     
+	            </div><!--//col-->
+	        </div><!--//row-->         
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading" id= "title1"></h2>
+                        <div class="content" id= "about"><p></p></div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+       
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading" id= "title2"></h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> <span class="title" id="course0"></span></h3>
+                                <h4 class="university"><span class="title" id="school0"></span> <span class="year" id="year_course0"></span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading" id="title3"></h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><span class="title" id="title_exp0"></span> <span class="place" ><a id="company0"></a></span> <span class="year" id="year0"></span></h3>  
+                                <p id="comment0"> </p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><span class="title" id="title_exp1"> </span><span class="place"><a id="company1"></a></span> <span class="year" id="year1"></span></h3>  
+                                <p id="comment1"> </p>
+                            </div><!--//item-->
+                           
+                            
+                            <div class="item">
+                                <h3 class="title"><span class="title" id="title_exp2"> </span><span class="place"><a id="company2"></a></span> <span class="year" id="year2"></span></h3>  
+                                <p id="comment2"> </p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+               
+            </div><!--//primary-->
 
 
-    <!-- Skills and intrest section -->
-    <div class="container principal">
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>São Paulo, SP</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span>gabrieltborba@gmail.com</li>
+                                <li><i class="fas fa-phone"></i><span class="sr-only">Phone:</span>+55 41 98857-4851</li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading" id="title4"></h2>
+                        <div class="content">
+                          
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Java<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl0"></span></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                               
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">SQL<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl1"></span></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 85%" aria-valuenow="85"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                   
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl2"></span></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">C , C++ , C#.NET<span class="level-label" data-bs-toggle="tooltip" data-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl3"></span></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
 
-        <div class="sections">
-            <h2 class="section-title">Experiências</h2>
+                                <div class="item">
+                                    <h3 class="level-title">Git<span class="level-label" data-bs-toggle="tooltip" data-placement="left" ><i class="fas fa-info-circle"></i><span id="skill_lvl4"></span></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
 
-            <div class="list-card">
-                <p class="exp">Mar/2020<br>Presente</p>
-                <div class="local">
-                    <h3 id="relevantPosition1">Java Backend Developer</h3>
-                    <h2 id="relevantCompany1">Beetools English School</h2>
+                                <div class="item">
+                                    <h3 class="level-title">Xamarin<span class="level-label" data-bs-toggle="tooltip" data-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl5"></span></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
 
-                    <p id="relevantSkills1">Controlando toda a infraestrutura, provendo todas as APIs que
-                        gerenciam as escolas, utilizando a linguagem de programação
-                        Java 8, MySQL , serviços AWS Lambda, SQS, SNS, S3, Aurora, API
-                        Gateway.</p>
-                </div>
-            </div>
-
-            <div class="list-card">
-                <p class="exp" id="relevantTime2">Mai/2019<br>Dez/2019</p>
-                <div>
-                    <h3 id="relevantPosition2">Java Developer Intern</h3>
-                    <h2 id="relevantCompany2">Hilab
-                        </h3>
-
-                        <p id="relevantSkills2">Desenvolvedor na área de P&D da empresa, realizando e testes e
-                            melhorias no software que gerencia o hardware do produto,
-                            utilizando a linguagem de programação Java 8, embarcado em
-                            microcontroladores Intel Edison</p>
-                </div>
-            </div>
-            
-            <div class="list-card">
-                <p class="exp" id="relevantTime2">Jul/2018<br>Mai/2019</p>
-                <div>
-                    <h3 id="relevantPosition2">Web Developer Intern</h3>
-                    <h2 id="relevantCompany2">Positivo Tecnologia
-                        </h3>
-
-                        <p id="relevantSkills2">Desenvolvimento e manutenção de sites de administração
-                            interna para controle de estoque e peças, utilizando linguagem
-                            de marcação HTML, PHP, JavaScript.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="sections">
-            <h2 class="section-title">Cursos e Formações</h2>
-            <div class="list-card">
-
-                <h3>Engenharia da Computação</h3>
-                <p>Universidade Positivo, 2020</p>
-
-            </div>
-
-        </div>
-
-        <!--
-        <div class="sections">
-
-            <h2 class="section-title">Competências</h2>
-
-            <div class="list-card">
-
-                <h3>Certificações</h3>
-                <p id="language">Azure AZ-900<br>
-                Azure DP-900<br>
-                Scrum Foundation Professional Certificate<br>
-                Google Analytics Individual Certification</p>
+                                <div class="item">
+                                    <h3 class="level-title">AWS<span class="level-label" data-bs-toggle="tooltip" data-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl6"></span></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 40%" aria-valuenow="40"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+      
+                                
+                                <p><a class="more-link" href="https://www.linkedin.com/in/gabrieltborba" id="ext_link"><i class="fas fa-external-link-alt"></i></a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
                 
 
-            </div>
-            <div class="list-card">
-                <h3>Áreas de atuação</h3>
-                <p>Data Science, Data analytics, Engenharia de Software</p>
-                <br>
-                <h3>Linguagens</h3>
-                <p>Python, R, Node.js, SQL</p>
-                <br>
-                <h3>Inglês</h3>
-                <p>Are your daily meetings in english? Mine too :) <br>I'd love to talk with you! </p>
-
-            </div>
-            
-            <div class="list-card">
-
-                <h2 class="section-title">Formação</h2>
-                <h3>Machine learning and Big Data</h3>
-                <p>UEL, 2021</p>
-             
-                <h3>Administração</h3>
-                <p>UEL, 2014-2018</p>
-
-            </div>
-
-        </div>
-       
-
-
-    </div>
-
-    <div class="container cards">
-
-
-        <div class="card">
-            <div class="skill-level">
-                <h2></h2>
-                <span>ENTP-T</span>
-            </div>
-            <div class="skill-meta">
-                <h3>Debatedora</h3>
-                <p>Gosto de usar a razão, mas também sou impulsionada pela curiosidade: Encontrar soluções é uma das
-                    coisas que mais gosto de fazer!</p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="skill-level">
-                <h2></h2>
-                <span>SOU</span>
-            </div>
-
-            <div class="skill-meta">
-                <h3>Solucionadora</h3>
-                <p>Não adianta, em todo teste comportamental que fiz na vida, esse é meu talento predominante & por
-                    isso, flexibilidade é marcante em mim. </p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="skill-level">
-                <h2></h2>
-                <span>O QUE</span>
-            </div>
-
-            <div class="skill-meta">
-                <h3>me tira da cama</h3>
-                <p>Criar novas coisas, causar impacto positivo no mundo e preocupar-me com o todo.</p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="skill-level">
-                <h2></h2>
-                <span>ONDE</span>
-            </div>
-
-            <div class="skill-meta">
-                <h3>quero chegar?</h3>
-                <p>Ser uma tech lead depois de APRENDER MUITO atuando em times globais.</p>
-            </div>
-        </div>
-
-         -->
-
-    </div>
-
-    <footer class="container">
-        <p style="font-size: 16px; margin-top: ">
-            Desenvolvido por <a href="https://www.linkedin.com/in/gabrieltborba/">Gabriel Tarasiuk Borba</a></p>
-        <div class="switch__container">
-            <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-            <label title="Ative o modo noturno" for="switch-shadow"></label><br>
-        </div>
-        <div class="switch__fontSize"></div>
-        <input type="button" class="btn btn-secondary btn-sm" value="Aumentar fonte" onclick="increaseFontSize()">
-        <input type="button" class="btn btn-secondary btn-sm" value="Diminuir fonte" onclick="decreaseFontSize()">
-        </div>
-
-
-
-
-    </footer>
-
-
-
-
-
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading" id="title5"></h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong id="title_lang"></strong></span>
+                                    <span class="level" id="subtitle_lang"><br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i> </span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
+</html> 
 
-</html>

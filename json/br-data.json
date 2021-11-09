@@ -1,0 +1,71 @@
+{
+    "function": "Desenvolvedor",
+    "title1": "Sobre Mim",
+    "about": "Graduado no curso de Engenharia da Computação, entusiasta com diversas tecnologias estou sempre procurando como melhorar na minha área de atuação.Estou aberto a oportunidades que me motivem e solidifique minha experiência como desenvolvedor e engenheiro da computação", 
+    "title2": "Cursos & Formações",
+    "courses":[
+        {
+            "course" : "BSc Engenharia da Computação",
+            "school": "Universidade Positivo",
+            "year": "2020"
+        }
+    ],  
+    "title3": "Experiências profissionais",
+    "profissional_exp":[
+        {
+            "title_exp": "Desenvolvedor Backend",
+            "company_exp": "Beetools English School",
+            "date": "Mar/20 - Presente",
+            "comment": "Controlando toda a infraestrutura, provendo todas as APIs que gerenciam as escolas, utilizando a linguagem de programação Java 8, MySQL , serviços AWS Lambda, SQS, SNS, S3, Aurora, API Gateway."
+        },
+        {
+            "title_exp": "Desenvolvedor Java (Estágio)",
+            "company_exp": "Hilab",
+            "date": "Mai/19 - Dez/19",
+            "comment": "Desenvolvedor na área de P&D da empresa, realizando e testes e melhorias no software que gerencia o hardware do produto, utilizando a linguagem de programação Java 8, embarcado em microcontroladores Intel Edison."
+        },
+        {
+            "title_exp": "Desenvolvedor Web (Estágio)",
+            "company_exp": "Positivo Tecnologia",
+            "date": "Jul/18 - Mai/19",
+            "comment": "Desenvolvimento e manutenção de sites de administração interna para controle de estoque e peças, utilizando linguagem de marcação HTML, PHP, JavaScript."
+        }
+    ],
+
+    "skills":[
+        {
+            "skill_name": "Java",
+            "skill_lvl": "Avançado"
+        },
+        {
+            "skill_name": "SQL",
+            "skill_lvl": "Avançado"
+        },
+        {
+            "skill_name": "HTML5, CSS3",
+            "skill_lvl": "Médio"      
+        },
+        {
+            "skill_name": "C , C++ , C#.NET",
+            "skill_lvl": "Médio"
+        },
+        {
+            "skill_name": "Git",
+            "skill_lvl": "Médio"
+        },
+        {
+            "skill_name": "Xamarin",
+            "skill_lvl": "Básico"       
+        },
+        {
+            "skill_name": "AWS",
+            "skill_lvl": "Básico"
+        }      
+    ],
+
+    "title4": "Linguagens de Programação",
+    "title5": "Linguas",
+    "title_lang": "Inglês",
+    "subtitle_lang": "Avançado",
+    "ext_link": "Mais em Linkedin"
+}
