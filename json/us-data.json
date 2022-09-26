@@ -14,7 +14,7 @@
     "profissional_exp": [
         {
             "title_exp": "Backend Developer",
-            "company_exp": "CI&T,
+            "company_exp": "CI&T",
             "date": "Feb/22 - Present",
             "comment": "Working mainly with the Java language in version 11 and the spring boot framework. Using the microsoft azure cloud platform, having experiences with terraform for observability tools (New Relic). Developing a system according to design standards and SOLID conventions, using TDD and BDD to cover the test pyramid."
         },
