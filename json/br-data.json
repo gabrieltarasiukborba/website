@@ -14,8 +14,14 @@
     "profissional_exp":[
         {
             "title_exp": "Desenvolvedor Backend",
+            "company_exp": "CI&T",
+            "date": "Fev/22 - Presente",
+            "comment": "Trabalhando principalmente com a linguagem Java na versão 11 e o framework spring boot. Utilizando a plataforma de nuvem da microsoft azure, tenho experiências com terraform para ferramentas de observabilidade (New Relic). Desenvolvendo um sistema de acordo com padrões de projeto e convenções SOLID, utilizando TDD e BDD para cobertura da pirâmide de testes."
+        },
+        {
+            "title_exp": "Desenvolvedor Backend",
             "company_exp": "Beetools English School",
-            "date": "Mar/20 - Presente",
+            "date": "Mar/20 - Jan/22",
             "comment": "Controlando toda a infraestrutura, provendo todas as APIs que gerenciam as escolas, utilizando a linguagem de programação Java 8, MySQL , serviços AWS Lambda, SQS, SNS, S3, Aurora, API Gateway."
         },
         {
@@ -23,12 +29,6 @@
             "company_exp": "Hilab",
             "date": "Mai/19 - Dez/19",
             "comment": "Desenvolvedor na área de P&D da empresa, realizando e testes e melhorias no software que gerencia o hardware do produto, utilizando a linguagem de programação Java 8, embarcado em microcontroladores Intel Edison."
-        },
-        {
-            "title_exp": "Desenvolvedor Web (Estágio)",
-            "company_exp": "Positivo Tecnologia",
-            "date": "Jul/18 - Mai/19",
-            "comment": "Desenvolvimento e manutenção de sites de administração interna para controle de estoque e peças, utilizando linguagem de marcação HTML, PHP, JavaScript."
         }
     ],
 
