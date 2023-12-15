@@ -1,6 +1,7 @@
 "use strict";
 
 language("br");
+wordcloud();
 //Enable tooltips everywhere
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -40,6 +41,57 @@ const rss = new RSS(
 	}
 );
 rss.render();
+
+function wordcloud(){		      
+	var words = [
+		{ text: "JAVA", size: 1.5 },
+		{ text: "SPRING", size: .9 },
+		{ text: "SOLID", size: .5 },
+		{ text: "DESIGN PATTERNS", size: .6 },
+		{ text: "SQL", size: 1},
+		{ text: "KOTLIN", size: .5 },
+		{ text: "GIT", size: 1 },
+		{ text: "HTML5", size:.4},
+		{ text: "CSS3", size: .4 },
+		{ text: "AWS", size: .3 },
+		{ text: "AZURE", size: .3 },
+		{ text: "KAFKA", size: .45 },
+		{ text: "RABBITMQ", size: .45 }
+	];
+			
+		var wordcloud = document.getElementById('wordcloud')
+		var color = "black"
+
+		for (let i = 0; i < words.length; i++) {
+			let result = words[i]
+			var element = document.createElement("p")
+			element.classList.add("skills")
+			var span_element = document.createElement("span")
+			var text_element = document.createTextNode(result.text)
+			span_element.appendChild(text_element)
+			var size_element = (result.size*2.5)
+			color = color_grade(size_element)
+			span_element.setAttribute("style","font-size: " + size_element + "rem; color: " + color)
+			element.appendChild(span_element).append("·")
+			wordcloud.appendChild(element)
+		}
+}
+
+function color_grade(scale){
+
+	const verdeLimite = 3;
+	const amareloLimite = 1;
+
+	if (scale > verdeLimite) {
+		return "rgb(0, 200, 150)";  // Verde
+	} else if (scale < verdeLimite && scale > amareloLimite) {
+		const percentAmarelo = ((scale - verdeLimite) / (amareloLimite - verdeLimite)) * 255;
+		return "rgb("+ percentAmarelo +",200,150)";
+	} else {
+		return "rgb(200, 0, 0)";  // Vermelho
+	}
+}
+
 
 
 /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
@@ -127,17 +179,6 @@ function language(lang) {
 
 				document.getElementById("comment" + i).textContent = result.comment;
 			}
-
-			for (let i = 0; i < json.skills.length; i++) {
-				let result = json.skills[i];
-
-				var level = document.getElementById("skill_lvl" + i);
-				level.innerHTML = '';
-				var txtLevel = document.createTextNode(result.skill_lvl);
-				level.appendChild(txtLevel);	
-			}
-			
-
 		});
 
 }

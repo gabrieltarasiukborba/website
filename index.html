@@ -150,33 +150,11 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading" id="title4"></h2>
 			<div id="wordcloud"></div> 
+    
 
-			    <script>
-			        // Exemplo de dados (substitua com seus próprios dados)
-			        var words = [
-			            { text: 'Kotlin', size: 20 },
-			            { text: 'Spring Boot', size: 18 },
-			            { text: 'Mensageria', size: 15 },
-			            { text: 'New Relic', size: 25 },
-			            // Adicione mais palavras conforme necessário
-			        ];
-			
-			        // Configuração da nuvem de palavras
-			        var options = {
-			            list: words,
-			            gridSize: 10,
-			            weightFactor: 5,  // Ajuste conforme necessário
-			            fontFamily: 'Arial',
-			            color: 'random-dark',
-			            backgroundColor: '#fff'
-			        };
-			
-			        // Gera a nuvem de palavras
-			        WordCloud(document.getElementById('wordcloud'), options);
-			    </script>
-                        <div class="content">
+                        <div class="content" style="margin-top: 1cap;">
                                 <p><a class="more-link" href="https://www.linkedin.com/in/gabrieltborba" id="ext_link"><i class="fas fa-external-link-alt"></i></a></p> 
-                            </div>    */          
+                            </div>            
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
@@ -219,7 +197,10 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="https://cdn.rawgit.com/timdream/wordcloud2.js/gh-pages/src/wordcloud2.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+    
 </body>
 </html> 
 
