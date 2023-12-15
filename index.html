@@ -121,7 +121,7 @@
                                 <p id="comment2"> </p>
                             </div><!--//item-->
 				 <div class="item">
-				<h3 class="title"><span class="title" id="title_exp2"> </span><span class="place"><a id="company2"></a></span> <span class="year" id="year2"></span></h3>  
+				<h3 class="title"><span class="title" id="title_exp3"> </span><span class="place"><a id="company3"></a></span> <span class="year" id="year3"></span></h3>  
 				<p id="comment3"> </p>
                             </div><!--//item-->
                             
@@ -149,62 +149,34 @@
                 <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading" id="title4"></h2>
+			<div id="wordcloud"></div> 
+
+			    <script>
+			        // Exemplo de dados (substitua com seus próprios dados)
+			        var words = [
+			            { text: 'Kotlin', size: 20 },
+			            { text: 'Spring Boot', size: 18 },
+			            { text: 'Mensageria', size: 15 },
+			            { text: 'New Relic', size: 25 },
+			            // Adicione mais palavras conforme necessário
+			        ];
+			
+			        // Configuração da nuvem de palavras
+			        var options = {
+			            list: words,
+			            gridSize: 10,
+			            weightFactor: 5,  // Ajuste conforme necessário
+			            fontFamily: 'Arial',
+			            color: 'random-dark',
+			            backgroundColor: '#fff'
+			        };
+			
+			        // Gera a nuvem de palavras
+			        WordCloud(document.getElementById('wordcloud'), options);
+			    </script>
                         <div class="content">
-                          
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl0"></span></span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-									</div><!--//level-bar-->                               
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">SQL<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl1"></span></span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 85%" aria-valuenow="85"  aria-valuemin="0" aria-valuemax="100"></div>
-									</div><!--//level-bar-->                                   
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Git<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl2"></span></span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"  aria-valuemin="0" aria-valuemax="100"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3<span class="level-label" data-bs-toggle="tooltip" data-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl3"></span></span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"  aria-valuemin="0" aria-valuemax="100"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Git<span class="level-label" data-bs-toggle="tooltip" data-placement="left" ><i class="fas fa-info-circle"></i><span id="skill_lvl4"></span></span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"  aria-valuemin="0" aria-valuemax="100"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Kafka & RabbitMQ<span class="level-label" data-bs-toggle="tooltip" data-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl5"></span></span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">AWS<span class="level-label" data-bs-toggle="tooltip" data-placement="left"><i class="fas fa-info-circle"></i><span id="skill_lvl6"></span></span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 40%" aria-valuenow="40"  aria-valuemin="0" aria-valuemax="100"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-      
-                                
                                 <p><a class="more-link" href="https://www.linkedin.com/in/gabrieltborba" id="ext_link"><i class="fas fa-external-link-alt"></i></a></p> 
-                            </div>              
+                            </div>    */          
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
