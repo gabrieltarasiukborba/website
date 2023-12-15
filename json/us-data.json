@@ -14,15 +14,21 @@
     "profissional_exp": [
         {
             "title_exp": "Backend Developer",
+            "company_exp": "Grupo Boticário",
+            "date": "Jun/23 - Present",
+            "comment": "Primarily working with Kotlin, Spring Boot, and messaging services like Kafka and RabbitMQ. I internally develop code, efficiently configuring queues for consumers and producers. I use tools like New Relic to optimize system performance"
+        },
+        {
+            "title_exp": "Backend Developer",
             "company_exp": "CI&T ",
-            "date": "Feb/22 - Present",
-            "comment": "Working mainly with the Java language in version 11 and the spring boot framework. Using the microsoft azure cloud platform, having experiences with terraform for observability tools (New Relic). Developing a system according to design standards and SOLID conventions, using TDD and BDD to cover the test pyramid."
+            "date": "Feb/22 - Apr/23",
+            "comment": "I worked with Java 11 and Spring Boot on the Microsoft Azure cloud platform. My skills include using Terraform for implementation and maintenance. I utilize tools such as New Relic for observability. I develop systems following SOLID principles and apply TDD and BDD to encompass the testing pyramid."
         },
         {
             "title_exp": "Backend Developer",
             "company_exp": "Beetools English School",
             "date": "Mar/20 - Jan/22",
-            "comment": "Controlling the entire infrastructure, providing all the APIs that manage the schools, using the programming language Java 8, MySQL, AWS Lambda services, SQS, SNS, S3, Aurora, API Gateway."
+            "comment": "I manage the entire infrastructure, providing APIs for school management. I work with Java 8, MySQL, and AWS services, including Lambda, SQS, SNS, S3, Aurora, and API Gateway."
         },
         {
             "title_exp": "Java Developer (Intern)",
@@ -33,7 +39,7 @@
     ],
 
     "skills":[
-        {
+       {
             "skill_name": "Java",
             "skill_lvl": "Advanced"
         },
@@ -41,26 +47,23 @@
             "skill_name": "SQL",
             "skill_lvl": "Advanced"
         },
+           {
+            "skill_name": "Git",
+            "skill_lvl": "Advanced"
+        },
         {
             "skill_name": "HTML5, CSS3",
-            "skill_lvl": "Medium"      
+            "skill_lvl": "Basic"      
         },
         {
-            "skill_name": "C , C++ , C#.NET",
-            "skill_lvl": "Medium"
+            "skill_name": "Kafka & RabbitMQ",
+            "skill_lvl": "Basic"
         },
-        {
-            "skill_name": "Git",
-            "skill_lvl": "Medium"
-        },
-        {
-            "skill_name": "Xamarin",
-            "skill_lvl": "Basic"       
-        },
+     
         {
             "skill_name": "AWS",
             "skill_lvl": "Basic"
-        }      
+        }           
     ],
 
     "title4": "Skills",
