@@ -12,17 +12,23 @@
     ],  
     "title3": "Experiências profissionais",
     "profissional_exp":[
+         {
+            "title_exp": "Desenvolvedor Backend",
+            "company_exp": "Grupo Boticário",
+            "date": "Jun/23 - Presente",
+            "comment": "Trabalhando principalmente na linguagem Kotlin, Spring Boot e serviços de mensageria como Kafka e RabbitMQ. Desenvolvo internamente códigos, configurando eficientemente filas para consumidores e produtores. Utilizo ferramentas como New Relic para otimizar o desempenho do sistema."
+        },
         {
             "title_exp": "Desenvolvedor Backend",
             "company_exp": "CI&T",
-            "date": "Fev/22 - Presente",
-            "comment": "Trabalhando principalmente com a linguagem Java na versão 11 e o framework spring boot. Utilizando a plataforma de nuvem da microsoft azure, tenho experiências com terraform para ferramentas de observabilidade (New Relic). Desenvolvendo um sistema de acordo com padrões de projeto e convenções SOLID, utilizando TDD e BDD para cobertura da pirâmide de testes."
+            "date": "Fev/22 - Abr/23",
+            "comment": "Trabalhei com Java 11 e Spring Boot na plataforma de nuvem Microsoft Azure. Minhas habilidades incluem o uso de Terraform para implementação e manutenção. Utilizo ferramentas como New Relic para observabilidade. Desenvolvo sistemas seguindo padrões SOLID e aplicando TDD e BDD para abranger a pirâmide de testes."
         },
         {
             "title_exp": "Desenvolvedor Backend",
             "company_exp": "Beetools English School",
             "date": "Mar/20 - Jan/22",
-            "comment": "Controlando toda a infraestrutura, provendo todas as APIs que gerenciam as escolas, utilizando a linguagem de programação Java 8, MySQL , serviços AWS Lambda, SQS, SNS, S3, Aurora, API Gateway."
+            "comment": "Gerenciei toda a infraestrutura, fornecendo APIs para a gestão de escolas. Trabalho com Java 8, MySQL e serviços AWS, incluindo Lambda, SQS, SNS, S3, Aurora e API Gateway."
         },
         {
             "title_exp": "Desenvolvedor Java (Estágio)",
@@ -41,22 +47,19 @@
             "skill_name": "SQL",
             "skill_lvl": "Avançado"
         },
+           {
+            "skill_name": "Git",
+            "skill_lvl": "Avançado"
+        },
         {
             "skill_name": "HTML5, CSS3",
-            "skill_lvl": "Médio"      
+            "skill_lvl": "Básico"      
         },
         {
-            "skill_name": "C , C++ , C#.NET",
-            "skill_lvl": "Médio"
+            "skill_name": "Kafka & RabbitMQ",
+            "skill_lvl": "Básico"
         },
-        {
-            "skill_name": "Git",
-            "skill_lvl": "Médio"
-        },
-        {
-            "skill_name": "Xamarin",
-            "skill_lvl": "Básico"       
-        },
+     
         {
             "skill_name": "AWS",
             "skill_lvl": "Básico"
